@@ -131,7 +131,7 @@ The next command is tracert. This command is a sort of “ping deluxe.” Tracer
 
 ### 1.4.4. netstat
 
-Netstat is another interesting command. It is an abbreviation for Network Status. Essentially, this command tells you what connections your computer currently has. Don’t panic if you see several connections; that does not mean a hacker is in your computer. You will see many private IP addresses. This means your network has internal communication going on. You can see this in Figure 1-5.
+Netstat is another interesting command. It is an abbreviation for Network Status. Essentially, this command tells you what connections your computer currently has. Don’t panic if you see several connections; that does not mean a hacker is in your computer. You will see many private IP addresses. This means your network has 2internal communication going on. You can see this in Figure 1-5.
 
 Certainly, other utilities can be used when working with network communications. However, the four we just examined are the core utilities. These four (ipconfig, ping, tracert, and netstat) are absolutely essential to any network administrator.
 
@@ -170,4 +170,20 @@ Intrusions are those attacks that are actually trying to intrude into the system
 
 The third category of attacks is blocking attacks, an example of which is the denial of service attack (DoS). In this attack, the attacker does not actually access the system, but rather simply blocks access to the system from legitimate users. In the words of the CERT (Computer Emergency Response Team) Coordination Centre (the first computer security incident response team), “A ‘denial-of-service’ attack is characterised by an explicit attempt by attackers to prevent legitimate users of a service from using that service.” One often-used blocking method is flooding the targeted system with so many false connection requests that it cannot respond to legitimate requests. DoS is an extremely common attack method.
 
-###
+### 1.9 Approaches of Network Security
+
+Organisations can choose from several approaches to network security. A particular approach, or paradigm, will influence all subsequent security decisions and set the tone for the entire organisation’s network security infrastructure. Network security paradigms can be classified by either the scope of security measures taken (perimeter, layered) or how proactive the system is
+
+
+#### 1.9.1 Perimeter Security Approach
+
+In a perimeter security approach, the bulk of security efforts are focused on the perimeter of the network. This focus might include firewalls, proxy servers, password policies, and any technology or procedure that makes unauthorised access of the network less likely. Little or no effort is made to secure the systems within the network. In this approach, the perimeter is secured, but the various systems within that perimeter are often vulnerable
+
+#### 1.9.2 Layered Security Approach
+
+A layered security approach is one in which not only is the perimeter secured, but individual systems within the network are also secured. All servers, workstations, routers, and hubs within the network are secure. One way to accomplish this is to divide the network into segments and secure each segment as if it were a separate network so that, if perimeter security is compromised, not all internal systems are affected. Layered security is the preferred approach whenever possible.
+
+
+#### 1.9.3 Hybrid Security Approach
+
+In the real world, network security is rarely completely in one paradigm or another. Networks generally fall along a continuum with elements of more than one security paradigm. The two categories also combine to form a hybrid approach. One can have a network that is predominantly passive but layered, or one that is primarily perimeter, but proactive. Considering approaches to computer security along a Cartesian coordinate system, with the x axis representing the level of passive-active approaches and the y axis depicting the range from perimeter to layered defence, can be helpful. The most desirable hybrid approach is a layered paradigm that is dynamic.
